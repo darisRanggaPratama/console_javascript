@@ -1,7 +1,7 @@
 // 1. Buat array dengan tipe data numerik berkapasitas 11 elemen yang diisi nilai random berkisar antara 0 sampai dengan 21 dimana menolak elemen yang bernilai ganda, lalu tampilkan hasilnya.
 
 // Membuat array kosong dengan kapasitas 11
-var arr = new Array(11);
+let arr = new Array(11);
 
 // Membuat fungsi untuk menghasilkan angka acak antara 0 dan 21
 function randomNum() {
@@ -10,7 +10,7 @@ function randomNum() {
 
 // Membuat fungsi untuk mengecek apakah suatu angka sudah ada di dalam array
 function isDuplicate(num, array) {
-  for (var i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (array[i] == num) {
       return true;
     }
@@ -19,9 +19,9 @@ function isDuplicate(num, array) {
 }
 
 // Mengisi array dengan angka acak yang tidak ganda
-var index = 0;
+let index = 0;
 while (index < arr.length) {
-  var num = randomNum();
+  let num = randomNum();
   if (!isDuplicate(num, arr)) {
     arr[index] = num;
     index++;
@@ -36,7 +36,7 @@ console.log("Array: " + arr);
 // Membuat fungsi untuk menyisipkan elemen ke dalam array pada posisi tertentu
 function insertElement(array, position, element) {
   // Menggeser elemen setelah posisi ke kanan
-  for (var i = array.length - 1; i > position; i--) {
+  for (let i = array.length - 1; i > position; i--) {
     array[i] = array[i - 1];
   }
   // Menyisipkan elemen ke posisi
@@ -60,10 +60,10 @@ console.log("Array setelah mengubah: " + arr);
 // 4. Tampilkan semua elemen array dengan mengurutkan nilainya secara descending.
 
 // Membuat array baru untuk menyimpan elemen yang sudah diurutkan secara descending
-var desc = [];
+let desc = [];
 
 // Menyalin elemen dari array ke array baru
-for (var i = 0; i < arr.length; i++) {
+for (let i = 0; i < arr.length; i++) {
   desc[i] = arr[i];
 }
 
@@ -80,7 +80,7 @@ console.log("Array diurutkan secara descending: " + desc);
 // Membuat fungsi untuk menghapus elemen dari array pada posisi tertentu
 function deleteElement(array, position) {
   // Menggeser elemen setelah posisi ke kiri
-  for (var i = position; i < array.length - 1; i++) {
+  for (let i = position; i < array.length - 1; i++) {
     array[i] = array[i + 1];
   }
 }
@@ -94,10 +94,10 @@ console.log("Array setelah menghapus: " + arr);
 //6. Tampilkan semua elemen array dengan mengurutkan nilainya secara ascending.
 
 // Membuat array baru untuk menyimpan elemen yang sudah diurutkan secara ascending
-var asc = [];
+let asc = [];
 
 // Menyalin elemen dari array ke array baru
-for (var i = 0; i < arr.length; i++) {
+for (let i = 0; i < arr.length; i++) {
   asc[i] = arr[i];
 }
 
