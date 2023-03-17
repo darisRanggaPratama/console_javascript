@@ -1,7 +1,7 @@
 // 1. Buat array dengan tipe data numerik berkapasitas 11 elemen yang diisi nilai random berkisar antara 0 sampai dengan 21 dimana menolak elemen yang bernilai ganda, lalu tampilkan hasilnya.
 
 // Membuat array kosong dengan kapasitas 11
-let arrayNumeric = new Array(11);
+const arrayNumeric = new Array(11);
 
 // Membuat fungsi untuk menghasilkan angka acak antara 0 dan 21
 function randomNum() {

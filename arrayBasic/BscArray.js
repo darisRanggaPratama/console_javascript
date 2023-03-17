@@ -9,7 +9,6 @@ for (let i = 0; i < numbers.length; i++) {
   while (numbers.includes(randomNumber)) {
     randomNumber = Math.floor(Math.random() * 22);
   }
-  
   numbers[i] = randomNumber;
 }
 
@@ -39,7 +38,7 @@ console.log("\n5. Elemen array setelah diubah: ", numbers);
 
 // 4. Tampilkan semua elemen array dengan mengurutkan nilainya secara descending
 let descendingOrder = numbers.slice().sort((a, b) => b - a);
-console.log("\6. Elemen array secara descending: ", descendingOrder);
+console.log("\n6. Elemen array secara descending: ", descendingOrder);
 
 // 5. Hapus index ke 2
 numbers.splice(2, 1);
