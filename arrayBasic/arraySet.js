@@ -40,6 +40,7 @@ console.log("\n3. Elemen ganjil secara descending: ", oddNumbers);
 
 // Sisipkan 1 elemen bernilai 100 antara index 4 dan index 5
 numbers.splice(4, 0, 100);
+con
 console.log("\n4. Elemen array setelah sisip: ", numbers);
 
 // Ubah index ke 3 dengan nilai 99
