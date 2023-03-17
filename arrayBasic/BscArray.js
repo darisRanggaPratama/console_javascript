@@ -28,23 +28,23 @@ const oddNumbers = numbers.filter(num => num % 2 !== 0).sort((a, b) => b - a);
 console.log("\n3. Elemen ganjil secara descending: ", oddNumbers);
 
 
-// 2. Sisipkan 1 elemen bernilai 100 antara index 4 dan index 5
+// Sisipkan 1 elemen bernilai 100 antara index 4 dan index 5
 numbers.splice(4, 0, 100);
 console.log("\n4. Elemen array setelah sisip: ", numbers);
 
-// 3. Ubah index ke 3 dengan nilai 99
+// Ubah index ke 3 dengan nilai 99
 numbers[3] = 99;
 console.log("\n5. Elemen array setelah diubah: ", numbers);
 
-// 4. Tampilkan semua elemen array dengan mengurutkan nilainya secara descending
+// Tampilkan semua elemen array dengan mengurutkan nilainya secara descending
 let descendingOrder = numbers.slice().sort((a, b) => b - a);
 console.log("\n6. Elemen array secara descending: ", descendingOrder);
 
-// 5. Hapus index ke 2
+// Hapus index ke 2
 numbers.splice(2, 1);
 console.log("\n7. Elemen array setelah dihapus: ", numbers);
 
-// 6. Tampilkan semua elemen array dengan mengurutkan nilainya secara ascending
+// Tampilkan semua elemen array dengan mengurutkan nilainya secara ascending
 let ascendingOrder = numbers.slice().sort((a, b) => a - b);
 console.log("\n8. Elemen array secara ascending: ", ascendingOrder);
 
